@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+} 
 :root {
     --seriy: #888888;
     --siniy: #6366F1;
@@ -80,13 +80,19 @@
 .button_container button {
     width: 220px;
     height: 50px;
-    background-color: var(--siniy);
+    background-color: var(--temnosiniy);
     display: flex;
     justify-content: center;
     border: none;
     align-items: center;
     border-radius: 7px;
     color: var(--beliy);
+}
+.button_container button img {
+    margin-right: 15px;
+}
+.button_container button:hover {
+    background-color: #6366F1;
 }
 
 
@@ -168,6 +174,7 @@
     flex-direction: column;
     box-shadow: 5px 40px 70px -40px rgba(0, 0, 0, 0.1);
     background-color: white;
+    z-index: 1;
 }
 .item_text {
     display: flex;
@@ -193,7 +200,8 @@
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    background-color: var(--siniy);
+    color: var(--siniy);
+    
 }
 
 .chekbox_div span{
@@ -207,12 +215,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--siniy);
+    background-color: var(--temnosiniy);
     border-radius: 5px;
+    cursor: pointer;
 }
 .button_div a{
     color: var(--beliy);
     font-size: 16px;
+}
+.button_div:hover {
+    background-color: #6366F1;
 }
 .item_icon_contain {
     display: flex;
@@ -284,9 +296,7 @@
 
 }
 
-.card_container :nth-last-of-type(2){
-    background: linear-gradient(132.33deg, rgba(69, 99, 255, 0.075) 1.63%, rgba(248, 83, 221, 0.075) 106.29%);
-}
+
 
 
 
@@ -300,6 +310,12 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+}
+.card_contain:hover {
+    background: linear-gradient(132.33deg, rgba(69, 99, 255, 0.075) 1.63%, rgba(248, 83, 221, 0.075) 106.29%);
+}
+.card_contain:hover h3{
+    color: var(--siniy);
 }
 
 .card_contain img{
@@ -430,7 +446,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(108.64deg, rgba(69, 99, 255, 0.075) 2.35%, rgba(248, 83, 221, 0.05) 144.83%)
+    background: var(--beliy);
 }
 
 .card_item_container {
@@ -480,9 +496,16 @@
     align-items: center;
     padding: 60px 37px;
     
-    background: linear-gradient(132.33deg, rgba(69, 99, 255, 0.075) 1.63%, rgba(248, 83, 221, 0.075) 106.29%);
+    background-color: var(--beliy);
     margin: 0 15px;
     
+}
+
+.item-div-obwiy:hover {
+    background: linear-gradient(132.33deg, rgba(69, 99, 255, 0.075) 1.63%, rgba(248, 83, 221, 0.075) 106.29%);
+}
+.item-div-obwiy:hover h4{
+    color: var(--siniy);
 }
 .item-div-obwiy img{
     width: 70px;
@@ -562,6 +585,9 @@
     font-size: 16px;
     border-radius: 10px;
 }
+.doctor_button:hover {
+    background-color: var(--siniy);
+}
 
 .book_button{
     width: 220px;
@@ -570,10 +596,13 @@
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    background-color: var(--siniy);
+    background-color: var(--temnosiniy);
     border-radius: 10px;
     color: var(--beliy);
     margin-left: 20px;
+}
+.book_button:hover {
+    background-color: var(--siniy);
 }
 
 
@@ -849,12 +878,15 @@
 .doctor2_button {
     width: 100%;
     height: 50px;
-    background-color: var(--siniy);
+    background-color: var(--temnosiniy);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 7px;
     margin-top: 15px;
+}
+.doctor2_button:hover {
+    background-color: var(--siniy);
 }
 .doctor2_button a{
     font-size: 16px;
@@ -1157,7 +1189,7 @@
 .subscribe_button a{
     width: 130px;
     height: 50px;
-    background-color: var(--siniy);
+    background-color: var(--temnosiniy);
     font-weight: 600;
     font-size: 16px;
     color: var(--beliy);
@@ -1166,6 +1198,9 @@
     align-items: center;
     margin: 10px;
     border-radius: 7px;
+}
+.subscribe_button a:hover {
+    background-color: var(--siniy);
 }
 
 
@@ -1275,8 +1310,27 @@
     border-top: 1px solid rgba(99, 102, 241, 0.15);;
     
 }
-.copyright_icon img{
+.copyright_icon {
+    display: flex;
+}
+.copyright_icon i{
     margin-right: 15px;
+    border: 1px solid #888888;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    
+    
+}
+.copyright_icon i:hover {
+    color: var(--siniy);
+    border: 1px solid var(--siniy);
+}
+.copyright_icon img:hover {
+    background: var(--siniy);
 }
 .copyright_text {
     display: flex;
